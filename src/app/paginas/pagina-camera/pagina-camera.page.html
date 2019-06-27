@@ -1,0 +1,22 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Galeria</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-grid>
+    <ion-row>
+      <ion-col size="6" *ngFor="let foto of galeria">
+        <img [src]="foto.data" />
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <ion-fab vertical="bottom" horizontal="end" slot="fixed">
+    <ion-fab-button (click)="tirarFoto()">
+      <ion-icon name="camera"></ion-icon>
+    </ion-fab-button>
+</ion-fab>
+  
+</ion-content>

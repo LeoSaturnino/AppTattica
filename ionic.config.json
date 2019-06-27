@@ -1,5 +1,7 @@
 {
   "name": "AppTattica",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }

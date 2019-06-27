@@ -2,8 +2,8 @@ import { NgModule } from '@angular/core';
 import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
-  { path: '', redirectTo: 'home', pathMatch: 'full' },
-  { path: 'home', loadChildren: './home/home.module#HomePageModule' },
+  { path: '', redirectTo: 'pagina-camera', pathMatch: 'full' },
+  { path: 'pagina-camera', loadChildren: './paginas/pagina-camera/pagina-camera.module#PaginaCameraPageModule' },
 ];
 
 @NgModule({
